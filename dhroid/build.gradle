@@ -1,13 +1,32 @@
 apply plugin: 'com.android.library'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile project(':ptr-lib')
 }
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 25
     buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+    }
+
+    packagingOptions {
+//        exclude('META-INF/DEPENDENCIES')
+//        exclude('META-INF/NOTICE')
+//        exclude('META-INF/LICENSE')
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/ASL2.0' //will not include ALS2.0 file
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7

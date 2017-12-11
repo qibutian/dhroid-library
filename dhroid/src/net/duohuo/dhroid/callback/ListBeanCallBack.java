@@ -99,7 +99,7 @@ public abstract class ListBeanCallBack<T> extends NormalCallBack<DResponse<T>> {
 			dResponse.list = list;
 		} else {
 
-			dResponse.list = new ArrayList<T>();
+			dResponse.list = new ArrayList<>();
 		}
 
 		dResponse.result = result;
