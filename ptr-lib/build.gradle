@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-// alidili改成你的GitHub账户名
-group = 'com.github.qibutian'
+
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
