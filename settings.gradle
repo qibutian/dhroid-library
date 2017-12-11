@@ -1,1 +1,1 @@
-include ':app', ':ptr-lib', ':dhroid'
+include ':app', ':ptr-lib', ':dh-lib'
