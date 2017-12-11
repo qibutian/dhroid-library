@@ -1,16 +1,12 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+// alidili改成你的GitHub账户名
+group = 'com.github.qibutian'
 
-
-buildscript {
-    repositories {
-        jcenter()
-    }
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     compile 'com.android.support:support-v4:26.0.0-alpha1'
     compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
-	 classpath 'com.android.tools.build:gradle:2.3.3'
-}
 }
 
 android {
