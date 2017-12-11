@@ -16,6 +16,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+	
+	
+	  packagingOptions {
+//        exclude('META-INF/DEPENDENCIES')
+//        exclude('META-INF/NOTICE')
+//        exclude('META-INF/LICENSE')
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/ASL2.0' //will not include ALS2.0 file
+    }
 
     sourceSets {
         main {
