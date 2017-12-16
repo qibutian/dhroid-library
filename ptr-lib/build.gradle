@@ -5,7 +5,8 @@ group = 'com.github.qibutian'
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+
 }
 
 android {
